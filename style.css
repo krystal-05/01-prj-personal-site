@@ -1,1 +1,165 @@
-/* Add you CSS here */
+/* Basic styles for the body */
+body {
+  font-family: Arial, sans-serif; /* Sets a simple font */
+  background-color: #f9f9f9;      /* Light background color */
+  margin: 0;                      /* Removes default margin */
+  padding: 0;                     /* Removes default padding */
+}
+
+/* Styles for each section */
+section {
+  background-color: #fff;         /* Default white background */
+  margin: 0;                      /* No space between sections */
+  padding: 32px 16px;             /* Top/bottom and left/right padding */
+  width: 100%;                    /* Full width of the page */
+  box-sizing: border-box;         /* Includes padding in width */
+  border-radius: 0;               /* No rounded corners */
+  box-shadow: none;               /* No shadow */
+  position: static;               /* Default position */
+  left: auto;
+  right: auto;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;             /* Center text and inline elements */
+}
+
+/* Alternate section backgrounds using :nth-of-type */
+section:nth-of-type(even) {
+  background-color: #f0f0f0;      /* Light gray for even sections */
+}
+
+/* Center the hero section text */
+.hero {
+  text-align: center;               /* Centers text in hero section */
+  background-color: #e3f2fd;        /* Light blue background as fallback */
+  background-image: url('img/hero-bg.jpg'); /* Add background image */
+  background-size: cover;           /* Make image cover the section */
+  background-position: center;      /* Center the image */
+  color: #fff;                      /* White text for readability */
+  min-height: 300px;                /* Minimum height for visibility */
+  display: flex;                    /* Use flex to center content */
+  flex-direction: column;           /* Stack heading and paragraph */
+  justify-content: center;          /* Center vertically */
+  align-items: center;              /* Center horizontally */
+}
+
+/* Style for section headings */
+h2 {
+  color: #1976d2;                 /* Blue color for headings */
+}
+
+/* Style for lists */
+ul {
+  padding-left: 20px;             /* Indent list items */
+}
+
+/* Remove bullet points from the skills list */
+.skills ul {
+  list-style: none;               /* No bullet points */
+  padding-left: 0;                /* Remove left padding */
+}
+
+/* Add some space between list items */
+li {
+  margin-bottom: 8px;
+}
+
+/* Add a small size for skill icons */
+.skill-icon {
+  width: 24px;         /* Sets icon width */
+  height: 24px;        /* Sets icon height */
+  vertical-align: middle; /* Aligns icon with text */
+  margin-right: 8px;   /* Adds space between icon and text */
+}
+
+/* Simple styles for the navigation bar */
+nav {
+  background-color: #1976d2; /* Blue background */
+  padding: 10px 0;           /* Space above and below links */
+  position: sticky;          /* Makes the navbar stick to the top */
+  top: 0;                    /* Sticks to the very top */
+  z-index: 100;              /* Keeps navbar above other content */
+}
+
+/* Style the navigation list */
+nav ul {
+  list-style: none;          /* Remove bullet points */
+  margin: 0;
+  padding: 0;
+  text-align: center;        /* Center the links */
+}
+
+/* Style each navigation item */
+nav ul li {
+  display: inline;           /* Display links in a row */
+  margin: 0 15px;            /* Space between links */
+}
+
+/* Style the navigation links */
+nav ul li a {
+  color: #fff;               /* White text */
+  text-decoration: none;     /* Remove underline */
+  font-weight: bold;         /* Bold text */
+  font-size: 16px;
+}
+
+/* Add a hover effect for links */
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Center the content of lists inside sections */
+section ul {
+  display: inline-block;          /* Allows centering the list itself */
+  text-align: left;               /* Keeps list items left-aligned if needed */
+  margin: 0 auto;                 /* Center the list horizontally */
+}
+
+/* Center the About Me text */
+.about-me p {
+  text-align: center;
+}
+
+/* Center the Skills list */
+.skills ul {
+  display: inline-block;
+  text-align: left;
+  margin: 0 auto;
+  list-style: none;
+  padding-left: 0;
+}
+
+/* Make hobbies horizontal and center them */
+.hobby-list {
+  display: flex;                 /* Arrange items in a row */
+  justify-content: center;       /* Center the items */
+  gap: 40px;                     /* Space between each hobby */
+  list-style: none;              /* Remove bullet points */
+  padding-left: 0;               /* Remove left padding */
+  margin: 0 auto;
+}
+
+/* Style for each hobby item */
+.hobby-list li {
+  display: flex;
+  flex-direction: column;        /* Stack icon above label */
+  align-items: center;           /* Center icon and label */
+}
+
+/* Style for hobby icons - make them the same height and keep them to scale */
+.hobby-icon {
+  height: 120px;                 /* Set the same height for all hobby images */
+  width: auto;                   /* Width adjusts to keep image proportions */
+  margin-bottom: 12px;           /* Space between icon and label */
+}
+
+/* Style for the About Me photo */
+.about-me-photo {
+  width: 150px;                     /* Set a good size for the photo */
+  height: auto;                     /* Keep the image to scale */
+  border-radius: 50%;               /* Make the photo a circle */
+  margin-bottom: 16px;              /* Space below the photo */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
